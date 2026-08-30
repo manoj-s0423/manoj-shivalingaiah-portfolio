@@ -29,15 +29,13 @@ you should never need to touch a component to update copy.
 
 | What | Where | Status |
 |---|---|---|
-| LinkedIn URL | `social.linkedin` in `src/data/profile.ts` | `undefined` — set it to your profile URL and the LinkedIn buttons in the nav/footer/contact will appear automatically. |
-| Exact employment dates | `period` field on each item in `experience` | Left `undefined` intentionally (no fabricated dates). Add real `"MMM YYYY – Present"` strings once confirmed. |
-| Bachelor's university name | `institution` on the `"bachelors"` entry in `education` | Left `undefined`. Add the real name once available. |
-| Certification credential link | `credentialUrl` on `certifications` | Only add this if you have a real, public verification URL — otherwise leave it `undefined` and the "Verify Credential" link stays hidden. |
-| Project 01 status | `projects[0]` (Production-Grade Microservices Platform on AWS EKS) | Currently labeled **"In Progress"** — the application layer (6-service polyglot repo) is real and pushed to GitHub; the infra/deployment layer (Docker, Terraform, EKS, Helm, Argo CD, Prometheus) is described as planned/in-progress. Once you've built and pushed that layer, update `statusLabel`, `statusTone`, `description`, and the `caseStudy.infrastructure` / `.cicd` / `.containerization` / `.kubernetes` / `.security` / `.observability` fields from "Planned: ..." to what's actually built, and flip `projectType` to `"Portfolio Project"`. |
+| Certification credential link | `credentialUrl` on `certifications` | Only add this if you have a real, public verification URL for the IIT Roorkee certificate (ID `IPTIH2412265` is already shown) — otherwise leave it `undefined` and the "Verify Credential" link stays hidden. |
+| Project 01 GitHub repo | `github` on `projects[0]` (Production-Grade Microservices Platform on AWS EKS) | Currently links to `microservices-platform`, which only has the application layer pushed. The site's copy already says the infra/deployment code (Terraform, Jenkins, Argo CD, Helm, Prometheus, Velero) is "being finalized for publication" — once you push it, that line in `description` and `caseStudy.outcome` can be simplified to drop the "finalized for publication" caveat. |
 
-Nothing else on the site is a placeholder — every other claim (experience,
-responsibilities, skills, the ShopStream repo details) is sourced from what
-you provided or from the actual `microservices-platform` repository.
+Everything else — experience dates, titles, education, LinkedIn, the resume
+PDF, and all project/skills content — is sourced directly from your resume
+(`public/Manoj-Shivalingaiah-DevOps-Resume.pdf`) or the actual
+`microservices-platform` repository.
 
 ## Add your resume
 

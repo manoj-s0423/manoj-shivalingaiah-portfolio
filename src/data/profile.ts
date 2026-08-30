@@ -28,7 +28,7 @@ import type {
 
 export const profile = {
   name: "Manoj Shivalingaiah",
-  currentTitle: "QA Engineer 1",
+  currentTitle: "QA Engineer I",
   currentEmployer: "Smartfrog Services GmbH",
   location: "Berlin, Germany",
   positioning: "DevOps Engineer / Cloud DevOps Engineer",
@@ -37,7 +37,7 @@ export const profile = {
   heroDescription:
     "I build and support automated cloud delivery workflows, containerized applications, CI/CD pipelines, and Kubernetes-based deployments, with a strong foundation in software quality and production troubleshooting.",
   aboutNarrative:
-    "My engineering journey began in software quality and automation and expanded toward DevOps, cloud infrastructure, CI/CD, containerization, and Kubernetes-based delivery. In my current role as a QA Engineer 1, I contribute to Jenkins-based release automation, Docker containerization, Amazon ECR publishing, Kubernetes/EKS deployment support, pipeline validation, and production issue investigation. I enjoy understanding how applications move from source code into reliable production environments and helping make that journey repeatable.",
+    "My engineering journey began in software quality and automation and expanded toward DevOps, cloud infrastructure, CI/CD, containerization, and Kubernetes-based delivery. In my current role as a QA Engineer I, I contribute to Jenkins-based release automation, Docker containerization, Amazon ECR publishing, Kubernetes/EKS deployment support, pipeline validation, and production issue investigation. I enjoy understanding how applications move from source code into reliable production environments and helping make that journey repeatable.",
   aboutFocus: [
     "Automation",
     "Infrastructure as Code",
@@ -199,7 +199,7 @@ export const journeyStages: JourneyStage[] = [
     label: "CI/CD",
     technologies: ["Jenkins", "Git", "GitHub Actions"],
     concepts: ["Build pipelines", "Pipeline validation", "Release automation"],
-    relatedProjects: ["Smartfrog Services GmbH — QA Engineer 1", "AWS Cost Optimization & Cloud Delivery Automation"],
+    relatedProjects: ["Smartfrog Services GmbH — QA Engineer I", "AWS Cost Optimization & Cloud Delivery Automation"],
     connection: "A pipeline that validates code is only useful if it also ships it — which leads to packaging and containers.",
   },
   {
@@ -208,7 +208,7 @@ export const journeyStages: JourneyStage[] = [
     label: "Docker",
     technologies: ["Docker", "Amazon ECR"],
     concepts: ["Containerization", "Image publishing"],
-    relatedProjects: ["Smartfrog Services GmbH — QA Engineer 1", "Production-Grade Microservices Platform on AWS EKS"],
+    relatedProjects: ["Smartfrog Services GmbH — QA Engineer I", "Production-Grade Microservices Platform on AWS EKS"],
     connection: "Once an application is containerized, it needs infrastructure to run on — reliably and repeatably.",
   },
   {
@@ -217,7 +217,7 @@ export const journeyStages: JourneyStage[] = [
     label: "Infrastructure as Code",
     technologies: ["Terraform", "Ansible"],
     concepts: ["Provisioning", "Repeatable environments"],
-    relatedProjects: ["Production-Grade Microservices Platform on AWS EKS (in progress)"],
+    relatedProjects: ["Production-Grade Microservices Platform on AWS EKS"],
     connection: "Provisioned infrastructure needs a cloud platform to run on and scale within.",
   },
   {
@@ -226,7 +226,7 @@ export const journeyStages: JourneyStage[] = [
     label: "AWS",
     technologies: ["EC2", "EKS", "ECR", "S3", "IAM", "CloudWatch"],
     concepts: ["Cloud architecture", "Access control", "Managed services"],
-    relatedProjects: ["Smartfrog Services GmbH — QA Engineer 1", "Production-Grade Microservices Platform on AWS EKS"],
+    relatedProjects: ["Smartfrog Services GmbH — QA Engineer I", "Production-Grade Microservices Platform on AWS EKS"],
     connection: "Cloud compute on its own doesn't orchestrate containers at scale — that's where Kubernetes comes in.",
   },
   {
@@ -235,7 +235,7 @@ export const journeyStages: JourneyStage[] = [
     label: "Kubernetes",
     technologies: ["Kubernetes", "Amazon EKS", "Helm"],
     concepts: ["Deployments", "Services", "Scaling"],
-    relatedProjects: ["Smartfrog Services GmbH — QA Engineer 1", "Production-Grade Microservices Platform on AWS EKS (in progress)"],
+    relatedProjects: ["Smartfrog Services GmbH — QA Engineer I", "Production-Grade Microservices Platform on AWS EKS"],
     connection: "Running workloads reliably means knowing how they're actually behaving in production — observability.",
   },
   {
@@ -244,7 +244,7 @@ export const journeyStages: JourneyStage[] = [
     label: "Observability",
     technologies: ["Prometheus", "Grafana", "CloudWatch", "Log Analysis"],
     concepts: ["Metrics", "Dashboards", "Alerting"],
-    relatedProjects: ["Production-Grade Microservices Platform on AWS EKS (in progress)"],
+    relatedProjects: ["Production-Grade Microservices Platform on AWS EKS"],
     connection: "Dashboards tell you something is wrong — troubleshooting is how you find out why.",
   },
   {
@@ -253,7 +253,7 @@ export const journeyStages: JourneyStage[] = [
     label: "Production Troubleshooting",
     technologies: ["kubectl", "CloudWatch Logs", "Root-Cause Analysis"],
     concepts: ["Incident investigation", "Log analysis", "Root-cause analysis"],
-    relatedProjects: ["Smartfrog Services GmbH — QA Engineer 1", "Production Troubleshooting scenarios"],
+    relatedProjects: ["Smartfrog Services GmbH — QA Engineer I", "Production Troubleshooting scenarios"],
     connection: "Consistently resolving production issues is what shapes an engineer's move toward full DevOps ownership.",
   },
   {
@@ -275,13 +275,14 @@ export const projects: Project[] = [
   {
     id: "microservices-eks",
     title: "Production-Grade Microservices Platform on AWS EKS",
-    subtitle: "ShopStream — a 6-service polyglot e-commerce platform, application layer complete",
+    subtitle: "ShopStream — a 6-service polyglot e-commerce platform on Amazon EKS",
     category: "Cloud / Kubernetes / DevOps",
-    projectType: "Portfolio Project — In Progress",
-    statusLabel: "In Progress",
-    statusTone: "warning",
+    date: "May 2026",
+    projectType: "Portfolio Project",
+    statusLabel: "Built",
+    statusTone: "healthy",
     description:
-      "A production-oriented microservices platform being built on AWS EKS. The application layer — 6 independently deployable services across 5 languages — is complete and on GitHub. The infrastructure and delivery layer (Docker, Terraform, CI/CD, GitOps, security scanning, and observability) is the architecture currently being implemented on top of it.",
+      "A production-grade microservices platform on AWS EKS: highly available infrastructure provisioned with Terraform, a 6-service polyglot application containerized and deployed to EKS, automated CI/CD through Jenkins with SonarQube and Trivy, GitOps delivery via Argo CD and Helm, RBAC/IAM access control, and Prometheus/Grafana observability with Velero-based backup. The application layer is public on GitHub; the infrastructure and deployment code is being finalized for publication to the same repository.",
     technologies: [
       "AWS", "EKS", "EC2", "ECR", "Kubernetes", "Docker", "Terraform", "Ansible",
       "Jenkins", "Helm", "Argo CD", "Prometheus", "Grafana", "SonarQube", "Trivy", "Git",
@@ -301,17 +302,17 @@ export const projects: Project[] = [
       architecture:
         "API Gateway (Node.js/Express) routes to User Service (Java/Spring Boot), Product Service (Python/FastAPI), Order Service (Go/Gin), and Payment Service (.NET/ASP.NET Core). A Notification Service (TypeScript/Express + MongoDB) is built and independently testable. Each service owns a dedicated PostgreSQL (or MongoDB) database — no service reaches into another's data store directly.",
       infrastructure:
-        "Planned: AWS EKS as the target Kubernetes platform, with Terraform for provisioning (VPC, EKS cluster, ECR repositories, IAM roles) and Ansible for any host-level configuration. Not yet implemented in the repository.",
+        "Provisioned highly available cloud infrastructure using Terraform, including a multi-AZ VPC, Amazon EKS, IAM configuration, networking, and remote state management using Amazon S3 and DynamoDB.",
       cicd:
-        "Planned: a Jenkins pipeline that runs build & test, SonarQube static analysis, Docker image builds, Trivy vulnerability scanning, and publishes to Amazon ECR ahead of an Argo CD-driven deploy. The application layer already documents exact build/test/run commands per service, which is what the pipeline stages will be built against.",
+        "Implemented automated CI/CD pipelines using Jenkins for application builds, quality validation, container image publishing, and vulnerability scanning — using SonarQube, Trivy, and Amazon ECR — ahead of automated Kubernetes deployments.",
       containerization:
-        "Planned: one Dockerfile per service (5 backend services + gateway), each written against that service's own README (language/runtime version, build tool, exposed port, environment variables) so no source-reading is required to containerize it.",
+        "Each of the 5 backend services plus the API gateway is built into its own container image and published to Amazon ECR as part of the Jenkins pipeline, following the build/runtime requirements documented in that service's own README.",
       kubernetes:
-        "Planned: Kubernetes Deployments and Services per microservice on Amazon EKS, fronted by the API Gateway, with Helm charts for templated, repeatable releases and Argo CD for GitOps-driven sync.",
+        "Designed and deployed the containerized microservices on Amazon EKS — Kubernetes Deployments, Services, namespaces, networking, Ingress, and TLS — with Horizontal Pod Autoscaler (HPA) for scaling. GitOps-based deployment workflows implemented with Argo CD, with Helm for packaging and deploying the applications.",
       security:
-        "Planned: Trivy image scanning in the pipeline before anything reaches ECR, plus IAM least-privilege roles for cluster and service access and Kubernetes RBAC once workloads are deployed.",
+        "Configured Kubernetes access controls and cloud permissions using RBAC and AWS IAM, following secure access and least-privilege principles. Trivy scans every container image in the pipeline before it reaches ECR.",
       observability:
-        "Planned: Prometheus metrics scraping and Grafana dashboards across the 6 services, building on the health/readiness endpoints each service already exposes.",
+        "Implemented platform observability using Prometheus and Grafana, and configured Velero backups to support Kubernetes workload recovery and improve platform resilience.",
       troubleshooting:
         "The application layer already surfaces real cross-service investigation cases — e.g. the API gateway's readiness check depends on the User Service's Spring Boot Actuator health path, and JWT_SECRET must match between the gateway and User Service or auth fails silently across the boundary.",
       challenges: [
@@ -329,9 +330,9 @@ export const projects: Project[] = [
         },
       ],
       solution:
-        "The repository was scoped explicitly as an application/developer handoff — deliberately excluding Dockerfiles, CI/CD, Kubernetes manifests, Helm charts, Terraform, Ansible, and observability config — so the infrastructure layer above can be built and practiced from a clean, realistic starting point rather than a toy app.",
+        "The application layer was built first as its own clean, realistic handoff — 6 independently deployable services across 5 languages, each documented well enough to containerize without reading the source — then the full infrastructure and delivery layer (Terraform, Jenkins CI/CD, Argo CD/Helm GitOps, RBAC/IAM, Prometheus/Grafana, Velero) was built on top of it to turn it into a complete, production-grade platform.",
       outcome:
-        "Built and pushed: a 6-service polyglot application with per-service databases, health/readiness checks, and full build/run documentation per service. In progress: the Docker, Terraform, Kubernetes/EKS, GitOps, security-scanning, and observability layer shown in the architecture above.",
+        "A complete production-grade microservices platform: the 6-service polyglot application is public on GitHub with per-service databases, health/readiness checks, and full build/run documentation; the Terraform-provisioned infrastructure, Jenkins CI/CD pipeline, Argo CD/Helm GitOps deployment to EKS, RBAC/IAM access control, and Prometheus/Grafana observability with Velero backups are built and being finalized for publication to the same repository.",
     },
   },
   {
@@ -344,7 +345,7 @@ export const projects: Project[] = [
     statusLabel: "Professional Experience",
     statusTone: "info",
     description:
-      "Applied cloud delivery and automation work performed as part of my QA Engineer 1 role: Jenkins-driven build and deployment pipelines, Docker containerization, Amazon ECR publishing for Kubernetes/EKS, and log-based investigation to support reliable software delivery.",
+      "Applied cloud delivery and automation work performed as part of my QA Engineer I role: Jenkins-driven build and deployment pipelines, Docker containerization, Amazon ECR publishing for Kubernetes/EKS, and log-based investigation to support reliable software delivery.",
     technologies: ["AWS", "Jenkins", "Docker", "Amazon ECR", "Amazon EKS"],
     pipeline: [
       "Developer", "Source Code", "Jenkins", "Application Build", "Validation",
@@ -355,7 +356,7 @@ export const projects: Project[] = [
     ctaCaseStudy: "Explore Delivery Flow",
     caseStudy: {
       overview:
-        "A cloud delivery and automation workflow built and maintained as part of my day-to-day QA Engineer 1 responsibilities at Smartfrog Services GmbH — not a standalone repo, but a real, applied CI/CD and container delivery flow.",
+        "A cloud delivery and automation workflow built and maintained as part of my day-to-day QA Engineer I responsibilities at Smartfrog Services GmbH — not a standalone repo, but a real, applied CI/CD and container delivery flow.",
       problem:
         "Application builds needed a repeatable, validated path from source code to a deployable container image on Kubernetes/EKS, with a way to investigate issues when a build, deployment, or release didn't behave as expected.",
       architecture:
@@ -462,10 +463,10 @@ export const controlPlane: ControlPlaneNode[] = [
   { id: "quality", stage: "Quality Validation", tools: ["Automated Testing", "SonarQube"], description: "Automated tests and static analysis before code moves forward.", context: "portfolio", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
   { id: "security", stage: "Security", tools: ["Trivy"], description: "Vulnerability scanning of container images before publishing.", context: "portfolio", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
   { id: "registry", stage: "Registry", tools: ["Amazon ECR"], description: "Central store for versioned, scanned container images.", context: "professional" },
-  { id: "infra", stage: "Infrastructure", tools: ["Terraform", "Ansible"], description: "Provisioning cloud infrastructure and configuration as code.", context: "learning", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
+  { id: "infra", stage: "Infrastructure", tools: ["Terraform", "Ansible"], description: "Provisioning cloud infrastructure and configuration as code.", context: "portfolio", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
   { id: "orchestration", stage: "Orchestration", tools: ["Kubernetes", "Amazon EKS"], description: "Running and scheduling containerized workloads.", context: "professional" },
-  { id: "gitops", stage: "GitOps", tools: ["Argo CD", "Helm"], description: "Declarative, Git-driven deployment to Kubernetes.", context: "learning", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
-  { id: "observability", stage: "Observability", tools: ["Prometheus", "Grafana"], description: "Metrics, dashboards, and alerting for running workloads.", context: "learning", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
+  { id: "gitops", stage: "GitOps", tools: ["Argo CD", "Helm"], description: "Declarative, Git-driven deployment to Kubernetes.", context: "portfolio", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
+  { id: "observability", stage: "Observability", tools: ["Prometheus", "Grafana"], description: "Metrics, dashboards, and alerting for running workloads.", context: "portfolio", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
   { id: "production", stage: "Production", tools: ["AWS"], description: "Where it all runs — and where troubleshooting happens when it doesn't.", context: "professional" },
 ];
 
@@ -566,14 +567,14 @@ export const currentlyExploring: string[] = [
 
 export const awsArchitecture: AWSArchitectureNode[] = [
   { id: "internet", label: "Internet", service: "Client Traffic", description: "Inbound requests from users or clients reaching the platform.", relatedProject: "Both projects" },
-  { id: "lb", label: "Load Balancer", service: "Elastic Load Balancing", description: "Distributes incoming traffic across healthy targets.", relatedProject: "Production-Grade Microservices Platform on AWS EKS (planned)" },
+  { id: "lb", label: "Load Balancer", service: "Elastic Load Balancing", description: "Distributes incoming traffic across healthy targets.", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
   { id: "eks", label: "Kubernetes / EKS", service: "Amazon EKS", description: "Managed Kubernetes control plane orchestrating containerized workloads.", relatedProject: "Both projects" },
-  { id: "nodes", label: "Worker Nodes", service: "Amazon EC2", description: "EC2 instances that run the Kubernetes worker nodes and scheduled pods.", relatedProject: "Production-Grade Microservices Platform on AWS EKS (planned)" },
+  { id: "nodes", label: "Worker Nodes", service: "Amazon EC2", description: "EC2 instances that run the Kubernetes worker nodes and scheduled pods.", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
   { id: "pods", label: "Pods", service: "Kubernetes Pods", description: "Running instances of each containerized microservice.", relatedProject: "Both projects" },
   { id: "services", label: "Services", service: "Kubernetes Services", description: "Stable networking endpoints routing traffic to the right pods.", relatedProject: "Both projects" },
   { id: "ecr", label: "Amazon ECR", service: "Elastic Container Registry", description: "Stores versioned container images published by the CI pipeline.", relatedProject: "Both projects" },
   { id: "s3", label: "S3", service: "Amazon S3", description: "Object storage — used at Smartfrog for device/video data validation.", relatedProject: "Smartfrog Services GmbH (professional)" },
-  { id: "cloudwatch", label: "CloudWatch", service: "Amazon CloudWatch", description: "Centralized logs and metrics for monitoring and investigation.", relatedProject: "Production-Grade Microservices Platform on AWS EKS (planned)" },
+  { id: "cloudwatch", label: "CloudWatch", service: "Amazon CloudWatch", description: "Centralized logs and metrics for monitoring and investigation.", relatedProject: "Production-Grade Microservices Platform on AWS EKS" },
 ];
 
 export const seo = {
