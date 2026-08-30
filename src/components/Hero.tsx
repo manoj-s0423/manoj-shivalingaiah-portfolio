@@ -12,7 +12,6 @@ export function Hero() {
       id="home"
       className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28"
     >
-      <div className="grid-backdrop pointer-events-none absolute inset-0" />
       <Container className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-8">
         <div>
           <motion.div

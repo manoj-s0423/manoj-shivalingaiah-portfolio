@@ -132,13 +132,95 @@ body {
   font-family: var(--font-mono);
 }
 
-/* Grid / circuit backdrop used behind hero + control-plane sections */
-.grid-backdrop {
+/* ---------------------------------------------------------
+   Ambient background layer — one fixed, viewport-anchored layer
+   sitting behind the entire page (mounted once in layout.tsx),
+   instead of a per-section pattern. Keeps every section visually
+   connected without repainting a grid on each one.
+--------------------------------------------------------- */
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-layer__grid {
+  position: absolute;
+  inset: -10% -10% auto -10%;
+  height: 140%;
   background-image:
     linear-gradient(var(--border) 1px, transparent 1px),
     linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+  background-size: 48px 48px;
+  opacity: 0.55;
+  mask-image: radial-gradient(ellipse 65% 50% at 50% 0%, black 0%, transparent 78%);
+}
+
+.dark .bg-layer__grid {
+  opacity: 0.4;
+}
+
+.bg-layer__glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.14;
+  will-change: transform;
+}
+
+.dark .bg-layer__glow {
+  opacity: 0.22;
+  filter: blur(100px);
+}
+
+.bg-layer__glow--a {
+  top: -14%;
+  right: -10%;
+  width: 46vw;
+  height: 46vw;
+  max-width: 620px;
+  max-height: 620px;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+  animation: bg-drift-a 28s ease-in-out infinite alternate;
+}
+
+.bg-layer__glow--b {
+  bottom: -16%;
+  left: -12%;
+  width: 40vw;
+  height: 40vw;
+  max-width: 560px;
+  max-height: 560px;
+  background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+  animation: bg-drift-b 34s ease-in-out infinite alternate;
+}
+
+.bg-layer__glow--c {
+  top: 38%;
+  left: 46%;
+  width: 30vw;
+  height: 30vw;
+  max-width: 420px;
+  max-height: 420px;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 72%);
+  opacity: 0.08;
+  animation: bg-drift-a 40s ease-in-out infinite alternate-reverse;
+}
+
+.dark .bg-layer__glow--c {
+  opacity: 0.12;
+}
+
+@keyframes bg-drift-a {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(-26px, 30px); }
+}
+
+@keyframes bg-drift-b {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(22px, -26px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

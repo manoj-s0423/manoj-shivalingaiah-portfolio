@@ -17,7 +17,7 @@ export function DevOpsJourney() {
         <SectionHeading
           eyebrow="From Testing to Production Engineering"
           title="The DevOps Journey"
-          description="My current professional role is QA Engineer 1. This is the technical direction that role's responsibilities have been pulling toward — click any stage to see how it connects to the next."
+          description="My current professional role is QA Engineer I. This is the technical direction that role's responsibilities have been pulling toward — click any stage to see how it connects to the next."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
