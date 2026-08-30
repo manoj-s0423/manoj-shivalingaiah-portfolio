@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import { profile } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function About() {
   return (
-    <section id="about" className="py-24">
-      <Container>
+    <section id="about" className="relative overflow-hidden py-24">
+      <SectionBackdrop motif="evolution" />
+      <Container className="relative">
         <SectionHeading eyebrow="About" title="About Me" />
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
           <motion.p

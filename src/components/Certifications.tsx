@@ -6,11 +6,13 @@ import { certifications } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
+import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-24">
-      <Container>
+    <section id="certifications" className="relative overflow-hidden py-24">
+      <SectionBackdrop motif="blueprint" />
+      <Container className="relative">
         <SectionHeading eyebrow="Foundation" title="Certifications" />
         <div className="grid gap-4 sm:grid-cols-2">
           {certifications.map((cert, i) => (

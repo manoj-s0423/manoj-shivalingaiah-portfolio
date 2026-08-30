@@ -5,6 +5,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { HeroPipeline } from "@/components/HeroPipeline";
+import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Hero() {
   return (
@@ -12,6 +13,7 @@ export function Hero() {
       id="home"
       className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28"
     >
+      <SectionBackdrop motif="pipeline-flow" />
       <Container className="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-8">
         <div>
           <motion.div

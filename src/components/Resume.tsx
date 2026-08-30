@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import { Download, FileText } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
+import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Resume({ resumeAvailable }: { resumeAvailable: boolean }) {
   return (
-    <section id="resume" className="py-24">
-      <Container>
+    <section id="resume" className="relative overflow-hidden py-24">
+      <SectionBackdrop motif="blueprint" />
+      <Container className="relative">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

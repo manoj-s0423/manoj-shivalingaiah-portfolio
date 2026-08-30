@@ -7,6 +7,7 @@ import { social } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/BrandIcons";
+import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Contact() {
   const [name, setName] = useState("");
@@ -21,8 +22,9 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24">
-      <Container>
+    <section id="contact" className="relative overflow-hidden py-24">
+      <SectionBackdrop motif="global-network" />
+      <Container className="relative">
         <SectionHeading
           eyebrow="Get In Touch"
           title="Let's Build Reliable Systems."
