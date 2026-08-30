@@ -27,6 +27,7 @@ export interface EducationItem {
   degree: string;
   institution?: string; // omitted if unknown rather than fabricated
   location: string;
+  period?: string;
   focusAreas?: string[];
 }
 
@@ -35,6 +36,7 @@ export interface Certification {
   name: string;
   issuer: string;
   status: "completed" | "in-progress";
+  credentialId?: string;
   credentialUrl?: string;
 }
 

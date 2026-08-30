@@ -71,7 +71,7 @@ export const profile = {
 // rather than pointing recruiters at a fake URL.
 export const social: SocialLinks = {
   email: "manojgowda.s0423@gmail.com",
-  linkedin: undefined, // e.g. "https://www.linkedin.com/in/your-handle"
+  linkedin: "https://linkedin.com/in/manoj-s",
   github: "https://github.com/manoj-s0423",
   location: "Berlin, Germany",
 };
@@ -104,9 +104,9 @@ export const experience: ExperienceItem[] = [
   {
     id: "smartfrog",
     company: "Smartfrog Services GmbH",
-    title: "QA Engineer 1",
+    title: "QA Engineer I",
     location: "Berlin, Germany",
-    period: undefined, // TODO: add exact start date once confirmed
+    period: "Jan 2026 – Present",
     current: true,
     summary:
       "Software quality engineering role with meaningful DevOps, CI/CD, containerization, and cloud deployment-support contributions on IoT and connected-camera products.",
@@ -133,17 +133,17 @@ export const experience: ExperienceItem[] = [
     id: "vtiger",
     company: "Vtiger Systems India Pvt. Ltd.",
     title: "Senior QA Automation Engineer",
-    location: "India",
-    period: undefined,
+    location: "Bengaluru, India",
+    period: "Aug 2022 – May 2025",
     current: false,
     summary:
       "Test automation and software quality engineering, building and maintaining automated test suites and API test coverage in CI-driven release workflows.",
     responsibilities: [
-      "Designed and maintained automated test suites using Java and Selenium WebDriver.",
+      "Managed and optimized test environments, maintaining 99% availability for automated and manual validation workflows.",
+      "Built and maintained Selenium-based automation frameworks, increasing test coverage by 30% and reducing regression cycle time.",
+      "Analyzed automated test reports, application issues, and release failures while collaborating with engineering teams to improve release readiness, software delivery processes, and troubleshooting efficiency.",
       "Performed API testing and request/response validation using Postman.",
       "Managed test builds and dependencies with Maven as part of CI-related engineering workflows.",
-      "Managed test environments and supported release validation ahead of production deployments.",
-      "Carried out defect analysis and worked closely with engineering teams to resolve issues before release.",
     ],
     devOpsHighlights: [
       "CI/CD-related engineering workflows",
@@ -156,16 +156,14 @@ export const experience: ExperienceItem[] = [
     id: "appright",
     company: "Appright Software Solutions Pvt Ltd.",
     title: "Quality Analyst",
-    location: "India",
-    period: undefined,
+    location: "Bengaluru, India",
+    period: "Oct 2020 – Jul 2022",
     current: false,
     summary:
       "Foundational quality assurance role — functional, regression, and exploratory testing, and early exposure to test automation. The starting point of my automation and troubleshooting mindset.",
     responsibilities: [
-      "Performed functional, regression, UI, and exploratory testing across product releases.",
-      "Wrote test cases and contributed to test planning for new features.",
-      "Tracked and triaged defects in collaboration with developers and product teams.",
-      "Adopted early test automation practices alongside manual testing workflows.",
+      "Designed and executed functional, regression, UI, and exploratory testing strategies across software releases.",
+      "Reduced regression testing time by 40% through early automation adoption and structured test documentation.",
     ],
     devOpsHighlights: [],
     tech: ["Manual Testing", "Regression Testing", "Test Planning", "Defect Tracking"],
@@ -517,7 +515,8 @@ export const certifications: Certification[] = [
     name: "Advanced Certification in Cloud Computing & DevOps",
     issuer: "IIT Roorkee",
     status: "completed",
-    credentialUrl: undefined, // add if/when a public verification link exists
+    credentialId: "IPTIH2412265",
+    credentialUrl: undefined, // resume references a "View Certificate" link but no plain URL was extractable from the PDF — add it here if you have it
   },
   {
     id: "cka",
@@ -533,16 +532,24 @@ export const education: EducationItem[] = [
     id: "masters",
     degree: "M.Sc. Software Engineering",
     institution: "University of Europe for Applied Sciences",
-    location: "Germany",
+    location: "Potsdam, Germany",
+    period: "Sep 2025 – Aug 2026",
     focusAreas: ["Software Engineering", "Cloud Computing", "DevOps", "Distributed Systems", "CI/CD", "Cloud Infrastructure", "Software Architecture"],
   },
   {
     id: "bachelors",
-    degree: "Bachelor's Degree — Computer Science / Software Engineering",
-    institution: undefined, // TODO: add exact university name
-    location: "India",
+    degree: "B.E. Electronics & Communication Engineering",
+    institution: "Visvesvaraya Technological University",
+    location: "Belagavi, India",
+    period: "Aug 2015 – Aug 2019",
     focusAreas: [],
   },
+];
+
+export const languages: { name: string; level: string }[] = [
+  { name: "English", level: "Fluent" },
+  { name: "German", level: "A2 — Actively learning" },
+  { name: "Kannada", level: "Native" },
 ];
 
 export const currentlyExploring: string[] = [

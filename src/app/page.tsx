@@ -12,6 +12,7 @@ import { ShipPipeline } from "@/components/ShipPipeline";
 import { Skills } from "@/components/Skills";
 import { Certifications } from "@/components/Certifications";
 import { Education } from "@/components/Education";
+import { Languages } from "@/components/Languages";
 import { CurrentlyExploring } from "@/components/CurrentlyExploring";
 import { Resume } from "@/components/Resume";
 import { Contact } from "@/components/Contact";
@@ -38,6 +39,7 @@ export default function Home() {
         <Skills />
         <Certifications />
         <Education />
+        <Languages />
         <CurrentlyExploring />
         <Resume resumeAvailable={resumeAvailable} />
         <Contact />

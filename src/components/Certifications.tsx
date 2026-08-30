@@ -36,6 +36,9 @@ export function Certifications() {
                 {cert.name}
               </h3>
               <p className="mt-1 text-sm text-text-muted">{cert.issuer}</p>
+              {cert.credentialId ? (
+                <p className="mono mt-1 text-xs text-text-faint">ID: {cert.credentialId}</p>
+              ) : null}
               {cert.credentialUrl ? (
                 <a
                   href={cert.credentialUrl}

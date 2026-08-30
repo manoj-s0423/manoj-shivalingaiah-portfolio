@@ -24,9 +24,12 @@ export function Education() {
               <span className="absolute -left-[calc(2rem+5px)] top-1.5 flex h-7 w-7 -translate-x-1/2 items-center justify-center rounded-full border border-border bg-bg text-primary sm:-left-[calc(2.5rem+5px)]">
                 <GraduationCap size={14} />
               </span>
-              <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-text">
-                {item.degree}
-              </h3>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold text-text">
+                  {item.degree}
+                </h3>
+                {item.period ? <span className="mono text-xs text-text-faint">{item.period}</span> : null}
+              </div>
               <p className="mt-1 text-sm text-text-muted">
                 {item.institution ? `${item.institution} · ` : ""}
                 {item.location}
