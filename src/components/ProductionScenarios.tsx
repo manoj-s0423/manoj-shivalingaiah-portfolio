@@ -6,16 +6,14 @@ import { incidents } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
-import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function ProductionScenarios() {
   const [active, setActive] = useState(0);
   const incident = incidents[active];
 
   return (
-    <section className="relative overflow-hidden py-24">
-      <SectionBackdrop motif="telemetry" />
-      <Container className="relative">
+    <section className="py-24">
+      <Container>
         <SectionHeading
           eyebrow="Production Troubleshooting"
           title="Can I Troubleshoot Systems?"

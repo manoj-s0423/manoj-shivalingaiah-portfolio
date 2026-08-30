@@ -5,16 +5,14 @@ import { useState } from "react";
 import { skills } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Skills() {
   const [active, setActive] = useState(0);
   const group = skills[active];
 
   return (
-    <section id="skills" className="relative overflow-hidden py-24">
-      <SectionBackdrop motif="tech-orbit" />
-      <Container className="relative">
+    <section id="skills" className="py-24">
+      <Container>
         <SectionHeading
           eyebrow="Technology Ecosystem"
           title="Skills"

@@ -7,7 +7,6 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge, TechBadge } from "@/components/ui/Badge";
 import type { UsageContext } from "@/types/profile";
-import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 const contextLabel: Record<UsageContext, { label: string; tone: "healthy" | "info" | "warning" }> = {
   professional: { label: "Current professional role", tone: "healthy" },
@@ -21,9 +20,8 @@ export function DevOpsControlPlane() {
   const ctx = contextLabel[node.context];
 
   return (
-    <section id="control-plane" className="relative overflow-hidden py-24">
-      <SectionBackdrop motif="mesh-network" />
-      <Container className="relative">
+    <section id="control-plane" className="py-24">
+      <Container>
         <SectionHeading
           eyebrow="How My Tools Work Together"
           title="My DevOps Control Plane"

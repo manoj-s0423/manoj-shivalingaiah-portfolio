@@ -7,15 +7,13 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ProjectCaseStudyModal } from "@/components/ProjectCaseStudyModal";
-import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Projects() {
   const [open, setOpen] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="relative overflow-hidden py-24">
-      <SectionBackdrop motif="architecture-topology" />
-      <Container className="relative">
+    <section id="projects" className="py-24">
+      <Container>
         <SectionHeading
           eyebrow="Featured Work"
           title="Projects"

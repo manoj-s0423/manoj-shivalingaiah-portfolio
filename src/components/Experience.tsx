@@ -6,13 +6,11 @@ import { experience } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge, TechBadge } from "@/components/ui/Badge";
-import { SectionBackdrop } from "@/components/backdrops/SectionBackdrop";
 
 export function Experience() {
   return (
-    <section id="experience" className="relative overflow-hidden py-24">
-      <SectionBackdrop motif="circuit-timeline" />
-      <Container className="relative">
+    <section id="experience" className="py-24">
+      <Container>
         <SectionHeading
           eyebrow="Experience"
           title="Professional Experience"
