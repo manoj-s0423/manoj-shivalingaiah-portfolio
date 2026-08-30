@@ -72,10 +72,10 @@ on the relevant entry in `projects` in `src/data/profile.ts` and render it in
 
 ## Deploying to Vercel
 
-This repo is pushed to `https://github.com/manoj-s0423/devops-portfolio`.
+This repo is pushed to `https://github.com/manoj-s0423/manoj-shivalingaiah-portfolio`.
 
 1. Go to [vercel.com/new](https://vercel.com/new), sign in with the GitHub
-   account that owns this repo, and import `manoj-s0423/devops-portfolio`.
+   account that owns this repo, and import `manoj-s0423/manoj-shivalingaiah-portfolio`.
 2. Vercel auto-detects Next.js — no configuration or environment variables
    are required for this project.
 3. Click **Deploy**. Vercel builds with `npm run build` and serves the
@@ -89,7 +89,7 @@ link (no backend), and there is no external API integration.
 ## Project structure
 
 ```
-devops-portfolio/
+manoj-shivalingaiah-portfolio/
 ├── public/
 │   ├── projects/                     # project screenshots (add your own)
 │   └── Manoj-Shivalingaiah-DevOps-Resume.pdf   # add your resume here
