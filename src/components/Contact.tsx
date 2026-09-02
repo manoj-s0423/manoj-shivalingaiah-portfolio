@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { type FormEvent, useState } from "react";
 import { social } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
@@ -43,6 +43,14 @@ export function Contact() {
               value={social.email}
               href={`mailto:${social.email}`}
             />
+            {social.phone ? (
+              <ContactLink
+                icon={<Phone size={16} />}
+                label="Phone"
+                value={social.phone}
+                href={`tel:${social.phone.replace(/[^+\d]/g, "")}`}
+              />
+            ) : null}
             {social.linkedin ? (
               <ContactLink icon={<LinkedinIcon size={16} />} label="LinkedIn" value="Connect on LinkedIn" href={social.linkedin} />
             ) : null}

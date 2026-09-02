@@ -4,6 +4,7 @@
 
 export interface SocialLinks {
   email: string;
+  phone?: string;
   linkedin?: string; // omit until a real profile URL is provided
   github?: string;
   location: string;
