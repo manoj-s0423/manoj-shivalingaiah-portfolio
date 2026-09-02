@@ -71,7 +71,7 @@ export const profile = {
 // rather than pointing recruiters at a fake URL.
 export const social: SocialLinks = {
   email: "manojgowda.s0423@gmail.com",
-  linkedin: "https://linkedin.com/in/manoj-s",
+  linkedin: "https://www.linkedin.com/in/manoj-s-4257ab245/",
   github: "https://github.com/manoj-s0423",
   location: "Berlin, Germany",
 };
