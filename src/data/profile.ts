@@ -33,9 +33,9 @@ export const profile = {
   location: "Berlin, Germany",
   positioning: "DevOps Engineer / Cloud DevOps Engineer",
   heroHeadline: "Engineering Reliable Infrastructure. Automating the Path to Production.",
-  heroSubtitle: "DevOps Engineer | AWS | Kubernetes | Docker | Terraform | CI/CD",
+  heroSubtitle: "DevOps Engineer | SRE | AWS | Kubernetes | Docker | Terraform | CI/CD",
   heroDescription:
-    "I build and support automated cloud delivery workflows, containerized applications, CI/CD pipelines, and Kubernetes-based deployments, with a strong foundation in software quality and production troubleshooting.",
+    "I build and support automated cloud delivery workflows, containerized applications, CI/CD pipelines, and Kubernetes-based deployments, with a strong foundation in software quality, production troubleshooting, and site reliability engineering.",
   aboutNarrative:
     "My engineering journey began in software quality and automation and expanded toward DevOps, cloud infrastructure, CI/CD, containerization, and Kubernetes-based delivery. In my current role as a QA Engineer I, I contribute to Jenkins-based release automation, Docker containerization, Amazon ECR publishing, Kubernetes/EKS deployment support, pipeline validation, and production issue investigation. I enjoy understanding how applications move from source code into reliable production environments and helping make that journey repeatable.",
   aboutFocus: [
